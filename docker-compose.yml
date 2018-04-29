@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  brent_euro_market:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: brent_euro_market
+    restart: always
+    volumes:
+      - .:/code
